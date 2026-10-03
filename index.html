@@ -6,8 +6,7 @@
 <title>新豐石滬｜新竹縣新豐鄉石滬文化發展協會</title>
 <meta name="description" content="新竹縣唯一的石滬群——坡頭石滬。新豐石滬文化協會致力於石滬修復、海岸淨灘、棲地營造與環境教育。">
 <meta property="og:title" content="新豐石滬｜百年石滬，守著潮來潮往的海">
-<meta property="og:description" content="修復石滬、清理海岸、帶孩子走進潮間帶，讓海洋智慧在新豐延續。">
-<meta property="og:type" content="website">
+<meta property="og:image" content="images/head.jpg">
 <meta name="theme-color" content="#0B2A3C">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%230B2A3C'/%3E%3Cpath d='M5 30 C 10 10, 30 10, 35 30' fill='none' stroke='%23D4AF5A' stroke-width='3'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,12 +20,8 @@ html{scroll-behavior:smooth}
 *{box-sizing:border-box}
 img{max-width:100%}
 [hidden]{display:none !important}
-@media (max-width:640px){
-  h1{font-size:38px !important}
-  h2{font-size:28px !important}
-  #top img{height:260px !important}
-  #join > div{padding:32px 22px !important}
-}
+.hero-photo{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 30%;border-radius:20px;box-shadow:0 12px 32px rgba(0,0,0,0.35)}
+@media (max-width:640px){h1{font-size:38px !important}h2{font-size:28px !important}#join > div{padding:32px 22px !important}}
 </style>
 </head>
 <body>
@@ -65,7 +60,7 @@ img{max-width:100%}
         </div>
       </div>
       <div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
-        <img src="images/hero.jpg" alt="夕陽下的坡頭石滬與卵石海岸" style="display: block; width: 100%; height: 400px; object-fit: cover; border-radius: 20px">
+        <img src="images/head.jpg" alt="從漂流木框景望向夕陽下的坡頭石滬" class="hero-photo">
       </div>
     </div>
     <svg viewBox="0 0 1440 90" preserveAspectRatio="none" style="display: block; width: 100%; height: 70px; margin-top: 56px" aria-hidden="true"><path d="M0 40 C 240 90, 480 0, 720 40 S 1200 80, 1440 30 L1440 90 L0 90 Z" fill="#0F4A5C"></path><path d="M0 60 C 260 20, 520 100, 760 58 S 1220 30, 1440 64 L1440 90 L0 90 Z" fill="#F3F6F7"></path></svg>
@@ -247,8 +242,7 @@ img{max-width:100%}
       <span style="background: #FFFFFF; border: 1px solid #D3E0E4; border-radius: 999px; padding: 8px 18px; font-size: 15px; color: #23414F">桃園石滬協會</span>
       <span style="background: #FFFFFF; border: 1px solid #D3E0E4; border-radius: 999px; padding: 8px 18px; font-size: 15px; color: #23414F">池和宮</span>
       <span style="background: #FFFFFF; border: 1px solid #D3E0E4; border-radius: 999px; padding: 8px 18px; font-size: 15px; color: #23414F">國立竹東高級中學</span>
-      <span style="background: #FFFFFF; border: 1px solid #D3E0E4; border-radius: 999px; padding: 8px 18px; font-size: 15px; color: #23414F">東海大學</span>
-      <span style="background: #FFFFFF; border: 1px solid #D3E0E4; border-radius: 999px; padding: 8px 18px; font-size: 15px; color: #23414F">國立中央大學</span>
+      <span style="background: #FFFFFF; border: 1px solid #D3E0E4; border-radius: 999px; padding: 8px 18px; font-size: 15px; color: #23414F">新竹縣政府</span>
       <span style="background: #FFFFFF; border: 1px dashed #A9BEC5; border-radius: 999px; padding: 8px 18px; font-size: 15px; color: #5A7380">[其他夥伴]</span>
     </div>
   </section>
@@ -258,7 +252,7 @@ img{max-width:100%}
     <div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 36px; display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between">
       <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 8px">
         <span style="font-family: 'Noto Serif TC', serif; font-size: 20px; font-weight: 700; color: #F2F7F8">新竹縣新豐鄉石滬文化發展協會</span>
-        <span style="font-size: 14px">成立於 2024 年 9 月 29 日｜理事長 葉其忠</span>
+        <span style="font-size: 14px">成立於 2024 年 9 月 29 日｜理事長 葉期忠</span>
         <span style="font-size: 14px">本網站部分內容由海洋委員會海洋保育署「115 年度海洋保育在地守護計畫」補助</span>
       </div>
       <div style="flex: 0 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 8px; font-size: 14px">
@@ -273,14 +267,7 @@ img{max-width:100%}
 
 </div>
 <script>
-document.querySelectorAll('[data-set]').forEach(function(btn){
-  btn.addEventListener('click',function(){
-    var t=btn.getAttribute('data-set');
-    document.querySelectorAll('.tide-panel').forEach(function(p){
-      p.hidden = p.getAttribute('data-tide')!==t;
-    });
-  });
-});
+document.querySelectorAll('[data-set]').forEach(function(b){b.addEventListener('click',function(){var t=b.getAttribute('data-set');document.querySelectorAll('.tide-panel').forEach(function(p){p.hidden=p.getAttribute('data-tide')!==t;});});});
 </script>
 </body>
 </html>
